@@ -5,6 +5,8 @@ html, body{
     height: 98%;
     margin: 2px;
     padding: 2px; 
+
+    font-family: 'Roboto', sans-serif;
 }
 .profile{
     border-radius: 49%;
@@ -27,4 +29,18 @@ html, body{
 .left {
     align-items: center;
     justify-content: center;
+}
+
+.intro{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.links{
+    display:inline-block;
+    margin-left: 12px;
+}
+
+.body{
+    /*fading effect*/
+    background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
 }

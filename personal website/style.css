@@ -3,8 +3,8 @@ html, body{
     align-items: center;
     justify-content: center;
     height: 98%;
-    margin: 2px;
-    padding: 2px; 
+    margin: 1px;
+    padding: 1px; 
 
     font-family: 'Roboto', sans-serif;
 }
@@ -13,7 +13,7 @@ html, body{
 }
 .background{
     background-color: orange;
-    max-width: 49%;
+    max-width: 80%;
     display: flex;
     flex-direction: row;
     height: 80%;
@@ -22,7 +22,7 @@ html, body{
 .left, .right{
     background-color: navy;
     margin: 10px;
-    max-width: 49%;
+    max-width: 60%;
     flex: 1;
 }
 

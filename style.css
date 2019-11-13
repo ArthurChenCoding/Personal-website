@@ -21,7 +21,7 @@ html, body{
 }
 
 .left, .right{
-    background-color: navy;
+    background-color: rgb(3, 102, 129);
     margin: 10px;
     max-width: 60%;
     flex: 1;

@@ -1,0 +1,76 @@
+<!--
+    Describes technical projects you have completed or would like to complete
+    Provides interesting details for the audience which may include links to your TAMU GitHub repository for these projects, thumbnails, and descriptions
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSCE 315 assignment">
+    <meta name="author" content="Arthur Chen UIN 327003368">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        h1 {
+            text-align: center;
+            padding-top: 45px;
+        }
+        body {
+            background-color:rgba(199, 229, 241, 0.712);
+        }
+        p {
+            width: 1024px;
+            height: auto;
+            margin: 0 auto;
+            font-family: 'Courier New', monospace;
+            font-size:large;
+        }
+        img {
+            display: block;
+            position:relative;
+            width:400px;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="service.html">Service</a></li>
+    </ul>
+    <h1>An example of my research interest:<br> <em>The spinning donut </em></h1>
+    <img src="Spinning donut.gif" alt="Spinning donut" style="margin-left: auto;margin-right: auto; padding-bottom: 50px;">
+    <!--adopted from https://repl.it/talk/share/donutc-donut-shaped-c-code-that-outputs-a-spinning-donut/52440-->
+	<p>
+    &emsp;I have been crazy about math and its application in computer science, specifically on computer graphics and math-intensive programming.<br>
+    &emsp;There is an example of the type of project that I will love to work on: <a href="https://www.a1k0n.net/2011/07/20/donut-math.html">Spinning donut</a>,
+    which is created by Andy Sloane in 2006. A few years later, another YouTuber made a <a href="https://www.youtube.com/watch?v=sW9npZVpiMI">video(youtube)</a> to explain
+    how it works interestingly. Although the animation seems easy to understand, it involves a significant amount of mathematical knowledge to render this,
+    such as trigonometric functions and matrixes.<br>
+    &emsp;To summarize how the animation was rendered, first of all, we need to understand that the animation we see feels like 3D while it is 2D, this very nature
+     indicates that we need to project 3D coordinates (X, Y, Z) into 2D coordinates (X, Y) by using trigonometric functions because computer screen has only 2D.
+    </p>
+    <img src="projection.jpg" height="300" width="500" class="center" alt="graphical explanation projection" style="display: block; position: relative; top:10px; height:300; width:70%;">
+    <p class="center" style="position: relative; top:70px; padding-top: 0px; padding-bottom: 100px;font-size: 20px; text-align: center;"><b>Figure 1: Projecting 3D object into 2D</b></p>
+    <p style="padding-bottom: 100px;">
+    &emsp;In geometry, the shape of a donut is called a <a href="https://en.wikipedia.org/wiki/Torus">torus</a>. Since torus is solid of revolution, we need to draw a 2D 
+    circle that orbits around a fixed axis in 3D space. After the torus is created, we need to rotate the central axis of the torus around its midpoint to create 
+    the "spinning donut" view, and this is achieved by the use of a <a href="https://en.wikipedia.org/wiki/Rotation_matrix">rotation matrix</a>. Therefore, we will 
+    be able to calculate the coordinates of the surface of the donut at any given time. Here comes the most interesting part. In the field of art, one of the most 
+    popular ways to draw 3D painting is manipulating the luminosity of each part. Similarly, after obtaining the coordinates of each pixel, we can calculate the 
+    <a href="https://en.wikipedia.org/wiki/Surface_normal">surface normal</a>. If the surface normal indicates a specific pixel is facing against the light, its 
+    luminosity is higher, vice versa. Finally, so how do we represent the luminosity only using <a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a>? If we 
+    assume the background is black and the font color is white, the character with a higher "density" presents a higher luminosity to our eyes. For example, 
+    ".,-~:;=!*#$@" is the list of characters from lower to higher luminacity. Wala! now we have a spinning donut!<br>
+    &emsp;Although I do not have the spinning donut project in my <a href="https://github.com/ArthurChenCoding">GitHub</a>, I do have some similar projects in it 
+    and hope you enjoy these contents as well!
+    </p>
+    
+    
+
+</body>
+</html>

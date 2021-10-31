@@ -1,3 +1,3 @@
-# ArthurChenCoding.github.io
+# personal website
 
-This is my portfolio.
+My personal website is published at https://arthurchencoding.github.io/Personal-website/
